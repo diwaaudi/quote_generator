@@ -7,12 +7,18 @@
     <h1 id="quote">Click the button to get a quote</h1>
     <button onclick="generate()">New Quote</button>
 
+    <h2 id="quote">Click the button to see a quote!</h2>
+    <button onclick="getRandomQuote()">New Quote</button>
+
+    
+    
     <script>
-      const quotes = ["Stay hungry, stay foolish.", "Code is like humor.", "Talk is cheap, show me the code."];
-      function generate() {
-        const q = quotes[Math.floor(Math.random() * quotes.length)];
-        document.getElementById("quote").innerText = q;
-      }
+        const quotes = ["Stay hungry, stay foolish.", "Code is like humor.", "Talk is cheap, show me the code."];
+        function generate() {
+            const q = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quote").innerText = q;
+        }
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
